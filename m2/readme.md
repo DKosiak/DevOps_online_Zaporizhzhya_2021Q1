@@ -6,7 +6,7 @@ The most popular Hypervisors for infrastrucute virtualzation are VMWARE and Hype
 First of all I've downloaded and install VirtualBox and according to points of task was doing needed action.
 
 > I've created VM's:
-Create VM1_Kosiak and clone it via GUI and VBoxManage to VM2_Kosiak. [Link to 1.1-1.5]
+Create VM1_Kosiak and clone it via GUI and VBoxManage to VM2_Kosiak. ![Link to 1.1-1.5] (/task2.1/Task2.1p2p1.1-1.5.jpg)
 
 > Create group of VM's where put VM1 and VM2 and try to start, reboot, stop togeher and independently. [Link to 1.6]
 
@@ -21,7 +21,7 @@ Create VM1_Kosiak and clone it via GUI and VBoxManage to VM2_Kosiak. [Link to 1.
 [Link to 2.2] ,
 [Link to 2.3]
 
-[Link to 1.1-1.5]: (/task2.1/Task2.1p2p1.1-1.5.jpg)
+
 [Link to 1.6]: </task2.1/Task2.1p2p1.6.jpg>
 [Link to 1.7]: </task2.1/Task2.1p2p1.7.jpg>
 [Link to 1.8-export]: </task2.1/Task2.1p2p1.8-export.jpg>
