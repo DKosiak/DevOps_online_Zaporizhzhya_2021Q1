@@ -1,3 +1,4 @@
+# Task 2
 # Task2.1
 The most popular Hypervisors for infrastrucute virtualzation are VMWARE and Hyper-V. If we want to use cloud Virtualization the best way would be use Amazon AWS or Microsoft Azure. 
 
@@ -26,7 +27,7 @@ Create VM1_Kosiak and clone it via GUI and VBoxManage to VM2_Kosiak.
 ![Link to 2.2](task2.1/Task2.1p2p2.2.jpg)
 ![Link to 2.3](task2.1/Task2.1p2p2.3.jpg)
 
-###### Task 2.1 to ne continued ... ASAP
+ Task 2.1 to ne continued ... ASAP
 
 #Task 2.2
 
