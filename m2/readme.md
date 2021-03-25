@@ -25,3 +25,5 @@ Create VM1_Kosiak and clone it via GUI and VBoxManage to VM2_Kosiak.
 
 ![Link to 2.2](task2.1/Task2.1p2p2.2.jpg)
 ![Link to 2.3](task2.1/Task2.1p2p2.3.jpg)
+
+### To ne continued ... ASAP
