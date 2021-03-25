@@ -29,7 +29,7 @@ Create VM1_Kosiak and clone it via GUI and VBoxManage to VM2_Kosiak.
 
  Task 2.1 to ne continued ... ASAP
 
-#Task 2.2
+# Task 2.2
 
 Investigating possibilities of AWS accroding Task plan
 
