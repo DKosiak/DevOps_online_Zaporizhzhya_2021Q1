@@ -11,12 +11,14 @@
     
                |BookAuthor|  
              > |book_id   |			
-               |author_id |  	|Author|
-							>	|id	   |
-								|fname |
-	                            |lname |
-```
-
+               |author_id | > 
+							
+			 	|Author|				
+			   >|id	   |                
+				|fname |
+                |lname |
+	
+```	
 ================================
 
 mysqladmin - u root password
