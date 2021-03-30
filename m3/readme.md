@@ -1,16 +1,18 @@
-#Task3.1 
+# Task3.1 
 
-
- |Book|      |Chapter| 
- |--> id    --|   id
- |    Title   |-->book_id
- |                title
- |      
- | |BookAuthor|  
- ---book_id		 |Author|	
-    author_id---->id	
-	              fname
-				  lname
+### DKosiakIbrary DB' schema
+ 
+ |Book |       |Chapter| 
+ |id   |       |id     |
+ |Title|     > |book_id|
+			   |title  |
+   
+ 
+               |BookAuthor|  
+             > |book_id   |	   |Author|	
+               |author_id |  > |id	  |
+              	               |fname |
+              				   |lname |
 ================================
 mysqladmin - u root password
 
