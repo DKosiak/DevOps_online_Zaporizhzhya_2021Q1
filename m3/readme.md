@@ -63,7 +63,7 @@ MariaDB [DkosiakLibrary]> SELECT database();
 
 #### Create tables
 
-CREATE TABLE Book
+CREATE TABLE Book  
 (
     id INT,
     Title VARCHAR(100)    
@@ -137,3 +137,44 @@ MariaDB [DkosiakLibrary]> select Title, fname, lname from Book, BookAuthor, Auth
 
 ```
 
+## Part 3.2
+
+Backup and restore DB
+
+mysqldump  DkosiakLibrary > DKL.sql
+
+```sh 
+MariaDB [DkosiakLibrary]> drop table Author
+    -> ;
+Query OK, 0 rows affected (0.01 sec)
+
+MariaDB [DkosiakLibrary]> show tables
+    -> ;
++--------------------------+
+| Tables_in_DkosiakLibrary |
++--------------------------+
+| Book                     |
+| BookAuthor               |
+| Chapter                  |
++--------------------------+
+3 rows in set (0.00 sec)
+
+```
+
+mysql DkosiakLibrary < DKL.sql
+
+```sh
+
+Database changed
+MariaDB [DkosiakLibrary]> show tables;
++--------------------------+
+| Tables_in_DkosiakLibrary |
++--------------------------+
+| Author                   |
+| Book                     |
+| BookAuthor               |
+| Chapter                  |
++--------------------------+
+4 rows in set (0.00 sec)
+
+```
