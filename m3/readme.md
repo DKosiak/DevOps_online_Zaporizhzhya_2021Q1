@@ -10,11 +10,11 @@
     
     
                |BookAuthor|  
-             > |book_id   |		|Author|	
-               |author_id | > 	|id	   |
+             > |book_id   |			
+               |author_id |  	|Author|
+							>	|id	   |
 								|fname |
-								|lname |
-	 
+	                            |lname |
 ```
 
 ================================
