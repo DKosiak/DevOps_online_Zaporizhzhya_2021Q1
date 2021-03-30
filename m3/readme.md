@@ -5,15 +5,15 @@
 ```sh 
  |Book |       |Chapter| 
  |id   |       |id     |
- |Title|     - |book_id|
-	           |title  |
+ |Title|     > |book_id|
+               |title  |
     
     
                |BookAuthor|  
-             - |book_id   |	   |Author|	
-               |author_id |  - |id	  |
-							   |fname |
-							   |lname |
+             > |book_id   |	   	|Author|	
+               |author_id |  - 	|id	   |
+								|fname |
+								|lname |
 	 
 ```
 
