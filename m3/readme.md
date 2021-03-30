@@ -1,4 +1,6 @@
-# Task3.1 
+# Task3
+
+## Part 3.1 
 
 ### DKosiakIbrary database schema
 
@@ -19,7 +21,8 @@
 			   |lname |
 	
 ```	
-================================
+
+### Create database 
 
 mysqladmin - u root password
 
@@ -40,7 +43,7 @@ MariaDB [(none)]> show databases;
 
 ```
 
-=================================
+### Work with DB
 
 ```sh 
 
@@ -58,6 +61,8 @@ MariaDB [DkosiakLibrary]> SELECT database();
 
 ```
 
+#### Create tables
+
 CREATE TABLE Book
 (
     id INT,
@@ -73,11 +78,9 @@ CREATE TABLE Chapter
 
 CREATE TABLE BookAuthor
 (
-    
-	book_id INT,
+    book_id INT,
     author_id INT    
 );
-
 
 CREATE TABLE Author
 (
@@ -101,7 +104,7 @@ MariaDB [DkosiakLibrary]> show tables;
 
 ```
 
-==================================
+##### Put data into tables
 
 INSERT Book VALUES (1, "First Book");
 INSERT Book VALUES (2, "Second Book");
@@ -117,7 +120,7 @@ INSERT BookAuthor VALUES (2,2);
 INSERT Author VALUES (1, "1 fname", "1 laname");
 INSERT Author VALUES (2, "2 fname", "2 laname");
 
-==================================
+#### make select from DB
 
 select Title, fname, lname from Book, BookAuthor, Author where Book.id=BookAuthor.book_id and BookAuthor.author_id=Author.id
 
@@ -133,3 +136,4 @@ MariaDB [DkosiakLibrary]> select Title, fname, lname from Book, BookAuthor, Auth
 2 rows in set (0.00 sec)
 
 ```
+
