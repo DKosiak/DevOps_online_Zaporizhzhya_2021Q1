@@ -25,6 +25,8 @@ mysqladmin - u root password
 
 mysqladmin create  DkosiakLibrary
 
+```sh
+
 MariaDB [(none)]> show databases;
 +--------------------+
 | Database           |
@@ -36,15 +38,25 @@ MariaDB [(none)]> show databases;
 +--------------------+
 5 rows in set (0.00 sec)
 
+```
+
 =================================
+
+```sh 
+
 MariaDB [(none)]> use DkosiakLibrary
+
 Database changed
+
 MariaDB [DkosiakLibrary]> SELECT database();
+
 +----------------+
 | database()     |
 +----------------+
 | DkosiakLibrary |
 +----------------+
+
+```
 
 CREATE TABLE Book
 (
@@ -74,6 +86,8 @@ CREATE TABLE Author
     lname VARCHAR(20)
 );
 
+```sh
+
 MariaDB [DkosiakLibrary]> show tables;
 +--------------------------+
 | Tables_in_DkosiakLibrary |
@@ -84,7 +98,11 @@ MariaDB [DkosiakLibrary]> show tables;
 | Chapter                  |
 +--------------------------+
 4 rows in set (0.00 sec)
+
+```
+
 ==================================
+
 INSERT Book VALUES (1, "First Book");
 INSERT Book VALUES (2, "Second Book");
 
@@ -98,8 +116,12 @@ INSERT BookAuthor VALUES (2,2);
 
 INSERT Author VALUES (1, "1 fname", "1 laname");
 INSERT Author VALUES (2, "2 fname", "2 laname");
+
 ==================================
+
 select Title, fname, lname from Book, BookAuthor, Author where Book.id=BookAuthor.book_id and BookAuthor.author_id=Author.id
+
+```sh 
 
 MariaDB [DkosiakLibrary]> select Title, fname, lname from Book, BookAuthor, Author where Book.id=BookAuthor.book_id and BookAuthor.author_id=Author.id;
 +-------------+---------+----------+
@@ -109,3 +131,5 @@ MariaDB [DkosiakLibrary]> select Title, fname, lname from Book, BookAuthor, Auth
 | Second Book | 2 fname | 2 laname |
 +-------------+---------+----------+
 2 rows in set (0.00 sec)
+
+```
