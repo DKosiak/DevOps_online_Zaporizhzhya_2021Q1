@@ -13,10 +13,10 @@
              > |book_id   |			
                |author_id | > 
 							
-			 	|Author|				
-			   >|id	   |                
-				|fname |
-                |lname |
+			   |Author|				
+			 > |id	  |                
+			   |fname |
+			   |lname |
 	
 ```	
 ================================
