@@ -1,7 +1,8 @@
 # Task3.1 
 
-### DKosiakIbrary DB' schema
- 
+### DKosiakIbrary database schema
+
+```sh 
  |Book |       |Chapter| 
  |id   |       |id     |
  |Title|     > |book_id|
@@ -13,7 +14,11 @@
                |author_id |  > |id	  |
               	               |fname |
               				   |lname |
+							   
+```
+
 ================================
+
 mysqladmin - u root password
 
 mysqladmin create  DkosiakLibrary
