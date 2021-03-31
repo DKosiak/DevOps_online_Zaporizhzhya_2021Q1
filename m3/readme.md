@@ -183,7 +183,7 @@ MariaDB [DkosiakLibrary]> show tables;
 
 1. Create DB Instance on AWS 
 
-![Link to 3.1-CreateInstance](task3.1/Task3.1p2p13.jpg)
+![Link to 3.1-CreateInstance](task3.1/task3.1p2p13.jpg)
 
 
 2. Import Data to Instanse
@@ -209,4 +209,6 @@ MariaDB [DkosiakLibrary]>  select Title, fname, lname from Book, BookAuthor, Aut
 
 3. Take DB snapshot 
 
-![Link to 3.1-TakeInstanceSnapShot](task3.1/Task3.1p2p16.jpg)
+![Link to 3.1-TakeInstanceSnapShot](task3.1/task3.1p2p16.jpg)
+
+####### To be continued ...
