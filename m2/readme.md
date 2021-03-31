@@ -61,8 +61,8 @@ Investigating possibilities of AWS accroding Task plan
 
 > Investigating S3 instruments. Add bucket and push files to there using GUI and CLI
 
-![Link to 2.11-1](task2.2/task2.2p11-1.jpg)
-![Link to 2.11-2](task2.2/task2.2p11-2.jpg)
+![Link to 2.11-1](task2.2/task2.2p11-12.jpg)
+![Link to 2.11-2](task2.2/task2.2p11-12-2.jpg)
 
 > Tried to deploy Docker containers on Amazon ESC.
 
