@@ -5,7 +5,9 @@
 Command passwd can change user password, lock, inlock, delete account
 When you change password for user it changes file /etc/shadow, where system save encryptes passwords for users.
 
-#### 3 We can you use next commands for show users registred in the system:
+#### 3 
+We can you use next commands for show users registred in the system:
+
 passwd -S -a 
 cat /etc/passwd
 
