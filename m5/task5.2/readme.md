@@ -3,15 +3,15 @@
 ### 1
 
 Structure /etc/passwd
-
+```sh
 dmytro:x:1000:1000:,,,:/home/dmytro:/bin/bash
-
+```
 LoginName: x - sasid about encrypted password: User Identifier : Group Identifier : Personal Info : Home directory : Shell
 
 Structure /etc/group 
-
+```sh
 dmytro:x:1000:
-
+```
 Group Name: x - sasid about encrypted password: Group Identifier : Group Members
 
 ### 2,3 
