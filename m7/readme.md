@@ -1,7 +1,7 @@
 # Task 7
 
 ## Task 7.1 
-I've created file script for 
+I've created file script for:
 - displaying the IP addresses and symbolic names of all hosts in the current subnet
 - displaying a list of open system TCP ports
 
