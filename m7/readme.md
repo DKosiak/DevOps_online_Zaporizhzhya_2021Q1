@@ -44,6 +44,11 @@ echo "You can use next:"
 print_keys_func
 fi
 ```
+Results:
+
+![Link to 7.2-1](task7.1/task7.1-script-result1.jpg)
+
+![Link to 7.2-2](task7.1/task7.1-script-result2.jpg)
 
 ## Task 7.2
 
