@@ -1,0 +1,4 @@
+---
+# vars file for deploy_apache
+source_dir: /home/dmytro/ansible-roles/index.html
+destin_dir: /var/www/html

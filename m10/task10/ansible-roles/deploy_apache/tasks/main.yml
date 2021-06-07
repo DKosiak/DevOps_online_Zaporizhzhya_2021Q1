@@ -1,0 +1,19 @@
+---
+# tasks file for deploy_apache
+- name: Check Linux distro
+  debug: var=ansible_os_family
+
+- block: #For Debian
+
+  - name: Install Apache Web Server
+    apt: name=apache2 state=latest
+
+  - name: Start Apache and enable it during boot
+    service: name=apache2 state=started enabled=yes
+
+  when: ansible_os_family == "Debian"
+
+- name: Copy index.html to target server
+  copy: src={{ source_dir }} dest={{ destin_dir }} mode=0555
+  notify: Restart Apache Debian
+
