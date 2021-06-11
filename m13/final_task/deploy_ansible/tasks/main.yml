@@ -1,0 +1,19 @@
+---
+# tasks file for deploy_ansible
+- name: Check Linux distro
+  debug: var=ansible_os_family
+
+- block: #For Debian
+
+  - name: Update Packagelist
+    apt:
+      update_cache: yes
+
+  - name: Install Python-pip
+    apt: name=python-pip state=latest
+
+  - name: Install Ansible
+    apt: name=ansible state=latest
+
+  when: ansible_os_family == "Debian"
+

@@ -1,0 +1,10 @@
+---
+
+- name: Install Ansible and Jenkins via Roles
+  hosts: Jenkins_host1
+  become: yes
+
+  roles:
+
+  - role: deploy_jenkins
+

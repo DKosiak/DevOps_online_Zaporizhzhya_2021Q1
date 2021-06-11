@@ -1,0 +1,31 @@
+---
+# tasks file for deploy_jenkins
+
+- name: Install Jenkins key
+  apt_key: url=https://pkg.jenkins.io/debian-stable/jenkins.io.key state=present
+  become: yes
+
+- name: Install Jenkins repository
+  apt_repository: repo='deb https://pkg.jenkins.io/debian-stable binary/' state=present
+  become: yes
+
+- name: Update package list
+  apt:
+    update_cache: yes
+
+- name: Install Java
+  apt: name=openjdk-8-jdk 
+  become : yes
+
+- name: Install Jenkins
+  apt: name=jenkins
+  become: yes
+
+- name: Show Jenkins init password
+  shell: cat /var/lib/jenkins/secrets/initialAdminPassword
+  changed_when: false
+  register: result
+
+- name : print Jenkins init password
+  debug:
+    var: result.stdout
